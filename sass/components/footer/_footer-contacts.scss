@@ -1,0 +1,57 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: var(--footer-bcg-color);
+}
+.link:hover,
+.link:focus{
+    color: var(--focus-color);
+}
+.footer-logo {
+    display: block;
+
+    margin-bottom: 20px;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--footer-logo-color);
+    text-decoration: none;
+
+    .footer-logo-web {
+    color: var(--nav-logo-web-color);
+    }
+}
+
+.address {
+    display: block;
+}
+
+.address-geography {
+    font-style: normal;
+    line-height: 1.71;
+    color: var(--hero-text-color);
+    text-decoration: none;
+    transition: color var(--main-transition);
+}
+
+.footer-contact {
+    font-style: normal;
+    line-height: 1.71;
+    color: var(--footer-contact-color);
+    text-decoration: none;
+    transition: color var(--main-transition);
+}
+
+.footer-list-item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.footer-section {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer-navigation {
+    display: block;
+}

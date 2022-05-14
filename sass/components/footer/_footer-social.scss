@@ -1,0 +1,48 @@
+.footer-social {
+    display: block;
+    margin-left: 70px;
+
+}
+
+.footer-social-title {
+    margin-bottom: 20px;
+    display: block;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: var(--main-letter-spacing);
+    text-transform: uppercase;
+
+    color: var(--hero-text-color);
+}
+
+.footer-social-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-social-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+
+.footer-social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: #FFFFFF;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 44px;
+    height: 44px;
+    transition: background-color var(--main-transition);
+
+    &:hover,
+    &:focus {
+    background-color: var(--focus-color);
+    }
+}
+

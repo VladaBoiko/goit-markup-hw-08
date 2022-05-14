@@ -1,0 +1,59 @@
+.form-agreement {
+    position: relative;
+    margin-top: 20px;
+    display: flex;
+    width: 425px;
+    height: 24px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.form-agreement-label {
+    position: absolute;
+    left: 36px;
+
+    display: block;
+    width: 401px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: var(--main-letter-spacing);
+
+    color: var(--main-text-color);
+}
+
+.form-agreement-checkbox {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+}
+
+.icon-disagree {
+    display: inline-block;
+    position: absolute;
+    left: 12px;
+    width: 16px;
+    height: 15px;
+    border: 1px solid var(--title-text-color);
+    border-radius: 3px;
+    transition: all var(--main-transition);
+
+    .form-agreement-checkbox:checked+& {
+    background-color: var(--focus-color);
+    background-image: url(../images/icon\ check\(1\).svg);
+    background-origin: border-box;
+    border-color: var(--focus-color);
+    }
+}
+
+.conditions {
+    color: var(--focus-color);
+}

@@ -1,0 +1,59 @@
+.secret-name {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+}
+.ul.button {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+
+}
+.hero-button,
+.portfolio-button {
+    cursor: pointer;
+}
+
+.portfolio-button {
+    display: block;
+    padding: 6px 22px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+
+    border-color: transparent;
+    border-radius: 4px;
+
+    transition: background-color var(--main-transition),
+    color var(--main-transition),
+    box-shadow var(--main-transition);
+
+    &:hover,
+    &:focus {
+    background-color: var(--focus-color);
+    color: var(--hero-text-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+    } 
+}
+
+.portfolio-button {
+    display: block;
+    border-radius: 4px;
+}
+
+.portfolio-button-item:not(:last-child) {
+    margin-right: 8px;
+}
