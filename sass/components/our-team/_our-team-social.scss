@@ -1,7 +1,10 @@
 .our-team-social {
     display: flex;
     justify-content: center;
-    margin-bottom: 30px;
+    @media screen and (min-width: 0px) {
+        padding-bottom: 24px;
+        }
+    // margin-bottom: 30px;
 }
 .our-team-social-item:not(:last-child) {
     margin-right: 10px;

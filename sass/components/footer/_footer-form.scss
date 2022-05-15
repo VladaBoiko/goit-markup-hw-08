@@ -1,12 +1,13 @@
 .footer-subscribe {
-    position: relative;
+    // position: relative;
     margin-left: auto
 }
 
-.footer-form-container {
-    display: flex;
+// .footer-form-container {
+//     // display: flex;
+    
 
-}
+// }
 
 .footer-form-container input {
     font-weight: 400;
@@ -15,7 +16,7 @@
 
     margin: 0;
     padding: 15px 16px;
-    width: 358px;
+    // width: 358px;
     height: 50px;
     background-color: transparent;
     color: var(--hero-text-color);
@@ -23,7 +24,12 @@
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-sizing: border-box;
     border-radius: 4px;
-    margin-right: 12px;
+    // margin-right: 12px;
+
+    @media screen and (min-width: 0px) {
+       width: 100%;
+       margin-bottom: 20px;
+    }
 
     &::placeholder{
      font-family: 'Roboto';
@@ -34,7 +40,8 @@
     letter-spacing: var(--main-letter-spacing);
 
 
-    color: rgba(255, 255, 255, 0.6);   
+    color: rgba(255, 255, 255, 0.6);  
+    
     }
 }
 
@@ -72,6 +79,11 @@
 
     transition: background-color var(--main-transition),
     box-shadow var(--main-transition);
+
+    @media screen and (min-width: 0px) {
+        margin-left: auto;
+        margin-right: auto;
+    }
 
     &:hover,
     &:focus {

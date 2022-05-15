@@ -2,35 +2,43 @@
 .hero {
     background-color: var(--hero-background-color);
     text-align: center;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
         url(../images/hero-bci.jpg);
     background-repeat: no-repeat;
-    background-size: auto;
+    
     margin-right: auto;
     margin-left: auto;
-    background-position: center;
+    
     max-width: 1600px;
-    height: 600px;
+    
 
-    &__text{
-    width: 696px;
-    margin-top: 0;
+    @media screen and (max-width: 480px) {
+           padding-top: 118px;
+           height: 400px;
+           background-size: cover;
+           background-position: 50% 50%;
+        }
 
-    margin-bottom: 30px;
-    margin-left: auto;
-    margin-right: auto;
-
-
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--hero-text-color);
-    }
+         &__text {
+             @media screen and (max-width: 480px) {
+                 width: 360px;
+                 font-size: 26px;
+                 line-height: 1.62;
+                 
+             }
+    
+             margin-top: 0;    
+             margin-bottom: 30px;
+             margin-left: auto;
+             margin-right: auto;
+            font-weight: 900;
+             letter-spacing: 0.06em;
+             text-transform: uppercase;
+             color: var(--hero-text-color);
+    
+         }
 
     &__button{
     cursor: pointer;

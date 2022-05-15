@@ -1,13 +1,16 @@
-.ul.exelents-list {
-    display: flex;
-}
+// .ul.exelents-list {
+//     display: flex;
+// }
 
 .exelents-list-item {
-    width: 270px;
+    @media screen and (min-width: 0px) {
+            width: 450px;
+        }
+    // width: 270px;
 
-    &:not(:last-child){
-    margin-right: 30px;
-    }
+    // &:not(:last-child){
+    // margin-right: 30px;
+    // }
 }
 
 
@@ -25,6 +28,10 @@
 .exelents-list-item__text {
     line-height: 1.71;
     font-weight: 400;
+    @media screen and (min-width: 0px) {
+            margin-bottom: 30px;
+        }
+   
 }
 
 .exelents-list-icons {

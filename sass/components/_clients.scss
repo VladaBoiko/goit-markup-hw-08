@@ -13,18 +13,37 @@
 
 
 .clients-list {
-    display: flex;
+    // display: flex;
     margin-top: 50px;
+    @media screen and (min-width: 0px) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
 }
-.clients-item:not(:last-child) {
-    margin-right: 30px;
+// .clients-item:not(:last-child) {
+//     margin-right: 30px;
+// }
+.clients-item{
+    @media screen and (min-width: 480px) {
+        margin-bottom: 30px;
+    &:nth-child(2n + 1){
+        margin-right: 30px;
+    }
+    }
 }
+
 .clients-link {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 170px;
-    height: 92px;
+    // width: 170px;
+    // height: 92px;
+    @media screen and (min-width: 0px) {
+            width: 210px;
+            height: 92px;
+        }
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     transition: border-color var(--main-transition);

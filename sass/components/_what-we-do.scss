@@ -1,4 +1,7 @@
 .what-we-do {
+    @media screen and (min-width: 0px) {
+           display: none;
+        }
     padding-top: 0;
 }
 .what-we-do__title {
