@@ -1044,6 +1044,7 @@ textarea::placeholder {
 }
 @media screen and (min-width: 0px) {
   .clients-link {
+    max-width: 210px;
     height: 92px;
   }
 }
