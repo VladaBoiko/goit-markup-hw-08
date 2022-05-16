@@ -20,6 +20,9 @@ body {
     padding-left: 15px;
     padding-right: 15px;
     margin: auto;
+    @media screen and (min-width: 0px) {
+        width: 100%;
+    }
     @media screen and (min-width: 480px) {
         width: 480px;
     }
@@ -33,7 +36,6 @@ body {
 }
 
 .section {
-    width: 100%;
     @media screen and (min-width: 0px) {
             padding-top: 60px;
             padding-bottom: 60px;
