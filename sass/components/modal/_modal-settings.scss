@@ -17,12 +17,10 @@
 
 .modal {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    
 
-    transform: translate(-50%, -50%) scale(1);
-    width: 528px;
-    min-height: 581px;
+    // transform: translate(-50%, -50%) scale(1);
+    
     padding: 40px 40px;
 
     background-color: #FFFFFF;
@@ -32,6 +30,13 @@
 
     .backdrop.is-hidden & {
     opacity: 0;
-    transform: translate(-50%, -50%) scale(1.2);
+    // transform: translate(-50%, -50%) scale(1.2);
     }
+    @media screen and (max-width: 768px) {
+    width: 450px;
+    min-height: 609px;
+    top: 93px;
+    left: 50%;
+    transform: translate(-50%) scale(1);  
+        }
 }

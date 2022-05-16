@@ -1,14 +1,18 @@
-.portfolio-progect-list {
-    display: flex;
-    flex-wrap: wrap;
-}
+// .portfolio-progect-list {
+//     display: flex;
+//     flex-wrap: wrap;
+// }
 
 .portfolio-progect-item {
     display: block;
-    width: 370px;
-    margin-right: 30px;
-    margin-bottom: 30px;
+    // width: 370px;
+    // margin-right: 30px;
+    // margin-bottom: 30px;
     position: relative;
+    @media screen and (max-width: 768px) {
+    width: 100%;
+    margin-bottom: 30px;   
+    }
 }
 
 .project-cards-image {
