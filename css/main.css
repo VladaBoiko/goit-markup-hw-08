@@ -514,7 +514,7 @@ img {
   margin-right: auto;
   margin-left: auto;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/bcg-img-mobile.jpg);
     background-repeat: no-repeat;
