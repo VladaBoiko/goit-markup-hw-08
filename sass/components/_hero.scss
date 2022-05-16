@@ -3,10 +3,10 @@
     background-color: var(--hero-background-color);
     text-align: center;
     
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)),
-        url(../images/hero-bci.jpg);
-    background-repeat: no-repeat;
+    // background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+    //         rgba(47, 48, 58, 0.4)),
+    //     url(../images/hero-bci.jpg);
+    // background-repeat: no-repeat;
     
     margin-right: auto;
     margin-left: auto;
@@ -14,10 +14,10 @@
     // max-width: 1600px;
     
 
-    @media screen and (max-width: 767px) {
-    //     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-    //     rgba(47, 48, 58, 0.4)),
-    // url();
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)),
+url(../images/mobile-hero.jpg);
+background-repeat: no-repeat;
 background-repeat: no-repeat;
             width: 100%;
            padding-top: 118px;
