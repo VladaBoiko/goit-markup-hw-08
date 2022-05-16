@@ -27,6 +27,7 @@
 // }
 .clients-item{
     @media screen and (min-width: 480px) {
+        width: calc((100%-4*15px)/2);
         margin-bottom: 30px;
     &:nth-child(2n + 1){
         margin-right: 30px;
@@ -41,7 +42,7 @@
     // width: 170px;
     // height: 92px;
     @media screen and (min-width: 0px) {
-            width: 210px;
+            // width: 210px;
             height: 92px;
         }
     border: 1px solid #AFB1B8;

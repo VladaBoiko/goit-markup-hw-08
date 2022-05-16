@@ -820,7 +820,7 @@ textarea::placeholder {
 
 @media screen and (min-width: 0px) {
   .exelents-list-item {
-    width: 450px;
+    width: 100%;
   }
 }
 
@@ -936,7 +936,7 @@ textarea::placeholder {
 }
 @media screen and (min-width: 0px) {
   .our-team-list-item {
-    width: 450px;
+    width: 100%;
   }
 }
 .our-team-list-item:not(:last-child) {
@@ -1026,6 +1026,7 @@ textarea::placeholder {
 
 @media screen and (min-width: 480px) {
   .clients-item {
+    width: 50%;
     margin-bottom: 30px;
   }
   .clients-item:nth-child(2n+1) {
@@ -1043,7 +1044,6 @@ textarea::placeholder {
 }
 @media screen and (min-width: 0px) {
   .clients-link {
-    width: 210px;
     height: 92px;
   }
 }
