@@ -187,7 +187,7 @@ img {
 
 @media screen and (max-width: 768px) {
   .mobile-menu {
-    display: none;
+    opacity: 0;
     position: absolute;
     z-index: 999;
     top: 0;
@@ -199,7 +199,7 @@ img {
     background-color: var(--hero-text-color);
   }
   .mobile-menu.is-open {
-    display: block;
+    opacity: 1;
     transform: translateY(0);
   }
 }
