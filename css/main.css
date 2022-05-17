@@ -36,19 +36,15 @@ body {
 .container {
   padding-left: 15px;
   padding-right: 15px;
-  margin: auto;
+  margin-right: auto;
+  margin-left: auto;
 }
-@media screen and (min-width: 0px) {
-  .container {
-    width: 100%;
-  }
-}
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .container {
     width: 480px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .container {
     width: 768px;
   }
@@ -1017,19 +1013,20 @@ textarea::placeholder {
 .clients-list {
   margin-top: 50px;
 }
-@media screen and (min-width: 0px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .clients-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-content: space-between;
   }
 }
 
 @media screen and (min-width: 480px) {
   .clients-item {
-    width: 50%;
     margin-bottom: 30px;
+  }
+  .clients-item:nth-child(2n+1) {
+    margin-right: 30px;
   }
 }
 
@@ -1041,10 +1038,10 @@ textarea::placeholder {
   border-radius: 4px;
   transition: border-color var(--main-transition);
 }
-@media screen and (min-width: 0px) {
+@media screen and (max-width: 767px) {
   .clients-link {
     max-width: 210px;
-    height: 92px;
+    padding: 16px 52px;
   }
 }
 .clients-link:hover, .clients-link:focus {
