@@ -19,6 +19,7 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
+            align-content: space-between;;
         }
 
 }
@@ -29,9 +30,9 @@
     @media screen and (min-width: 480px) {
         width: 50%;
         margin-bottom: 30px;
-    &:nth-child(2n + 1){
-        margin-right: 30px;
-    }
+    // &:nth-child(2n + 1){
+    //     margin-right: 30px;
+    // }
     }
 }
 
