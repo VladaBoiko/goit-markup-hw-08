@@ -1,8 +1,12 @@
 .footer-social {
     display: block;
-    @media screen and (min-width: 0px) {
+    @media screen and (max-width: 767px) {
             display: block;
             margin-bottom: 60px;
+        }
+        @media screen and (min-width: 768px)and (max-width: 1199px) {
+            display: block;
+            margin-left: 165px;
         }
     // margin-left: 70px;
 
