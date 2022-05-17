@@ -1,16 +1,19 @@
-// .ul.exelents-list {
-//     display: flex;
-// }
+.exelents-list{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 
+}
 .exelents-list-item {
-    @media screen and (min-width: 0px) {
+    @media screen and (max-width: 767px) {
             width: 100%;
         }
-    // width: 270px;
-
-    // &:not(:last-child){
-    // margin-right: 30px;
-    // }
+                @media screen and (max-width: 1199px) {
+                    max-width: 354px;
+                    &:nth-child(2n + 1){
+                        margin-right: 30px;
+                    }
+                }
 }
 
 
@@ -28,7 +31,7 @@
 .exelents-list-item__text {
     line-height: 1.71;
     font-weight: 400;
-    @media screen and (min-width: 0px) {
+    @media screen and (max-width: 1199px) {
             margin-bottom: 30px;
         }
    
