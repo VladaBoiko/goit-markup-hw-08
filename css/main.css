@@ -405,6 +405,7 @@ img {
 
 .footer-logo {
   display: block;
+  font-style: normal;
   margin-bottom: 20px;
   font-family: "Raleway";
   font-weight: 700;
@@ -412,6 +413,11 @@ img {
   line-height: 1.19;
   color: var(--footer-logo-color);
   text-decoration: none;
+}
+@media screen and (max-width: 1199px) {
+  .footer-logo.desktop {
+    display: none;
+  }
 }
 @media screen and (max-width: 1199px) {
   .footer-logo {
@@ -463,6 +469,14 @@ img {
   margin-bottom: 9px;
 }
 
+@media screen and (max-width: 767px) {
+  .footer-section {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 @media screen and (min-width: 768px) {
   .footer-section.mobile {
     display: none;
@@ -473,25 +487,12 @@ img {
     display: none;
   }
 }
-@media screen and (max-width: 767px) {
-  .footer-section {
-    display: block;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .footer-section {
+  .footer-tablet {
     display: flex;
-    flex-wrap: wrap;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .footer-section .td-footer {
-    display: flex;
+    justify-content: space-around;
     align-items: baseline;
-    justify-content: space-evenly;
   }
 }
 
@@ -511,7 +512,6 @@ img {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-social {
     display: block;
-    margin-left: 165px;
   }
 }
 
@@ -526,6 +526,11 @@ img {
   letter-spacing: var(--main-letter-spacing);
   text-transform: uppercase;
   color: var(--hero-text-color);
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-social-title {
+    text-align: center;
+  }
 }
 
 .footer-social-list {
@@ -553,7 +558,7 @@ img {
   background-color: var(--focus-color);
 }
 
-.footer-subscribe {
+.tablet-form-container {
   margin-left: auto;
   margin-right: auto;
 }
@@ -575,12 +580,17 @@ img {
   .footer-form-container input {
     width: 100%;
     margin-bottom: 20px;
+    margin-top: 30px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-form-container input {
     width: 450px;
     margin-bottom: 20px;
+    display: block;
+    margin-top: 30px;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 .footer-form-container input::placeholder {
@@ -598,8 +608,12 @@ img {
   line-height: 1.14;
   text-transform: uppercase;
   display: block;
-  margin-bottom: 20px;
   color: var(--hero-text-color);
+}
+@media screen and (max-width: 1199px) {
+  .footer-form-title {
+    text-align: center;
+  }
 }
 
 .footer-form-button {
@@ -1227,7 +1241,7 @@ textarea::placeholder {
 }
 @media screen and (max-width: 767px) {
   .clients-link {
-    max-width: 210px;
+    width: 210px;
     padding: 16px 52px;
   }
 }
