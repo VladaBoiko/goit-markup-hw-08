@@ -1,7 +1,9 @@
 .clients-box{
+    @media screen and (max-width: 1199px) {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    }
 }
 .clients-title {
     display: block;
@@ -19,14 +21,16 @@
 
 .clients-list {
     margin-top: 50px;
-
+   display: flex;
+   flex-wrap: wrap;
     @media screen and (min-width: 480px) and (max-width: 1199px) {
-        display: flex;
-        flex-wrap: wrap;
         justify-content: space-between;
     }
-
+    @media screen and (min-width: 1200px) {
+        flex-wrap: nowrap;
+    }
 }
+
 
 .clients-item {
     @media screen and (max-width: 767px) {
@@ -42,12 +46,21 @@
             }
     
         }
+        @media screen and (min-width: 1200px) {
+          &:not(:last-child){
+            margin-right: 30px;
+        }  
+        }
 }
+
 
 .clients-link {
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    transition: border-color var(--main-transition);
     
     @media screen and (max-width: 767px) {
         width: 210px;
@@ -57,11 +70,11 @@
             max-width: 226px;
             padding: 16px 60px;
     }
-
-    border: 1px solid #AFB1B8;
-    border-radius: 4px;
-    transition: border-color var(--main-transition);
-
+    @media screen and (min-width: 1200px) {
+        max-width: 170px;
+        padding: 16px 32px;
+        
+    }
     &:hover,
     &:focus {
         border-color: var(--focus-color);

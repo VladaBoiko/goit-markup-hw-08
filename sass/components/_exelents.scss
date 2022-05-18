@@ -8,18 +8,19 @@
     @media screen and (max-width: 479px) {
             width: 100%;
         }
-         @media screen and (min-width: 798px) and (max-width: 1199px) {
+    @media screen and (min-width: 480px) and (max-width: 1199px) {
                     width: 354px;
                     &:nth-child(2n + 1){
                         margin-right: 30px;
                     }
                 }
-                @media screen and (min-width: 480px) and (max-width: 1199px) {
-                    width: 354px;
-                    &:nth-child(2n + 1){
+    @media screen and (min-width: 1200px) {
+                    width: 270px;
+                    flex-wrap: nowrap;
+                    &:not(:last-child){
                         margin-right: 30px;
                     }
-                }
+    }
 }
 
 

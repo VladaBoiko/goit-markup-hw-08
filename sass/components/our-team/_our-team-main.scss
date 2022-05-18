@@ -2,12 +2,14 @@
     background-color: #F5F4FA;
 }
 .our-team-list{
-    @media screen and (min-width: 768px) and (max-width: 1199px){
-        display: flex;
+    display: flex;
+    justify-content: center;
+    @media screen and (max-width: 1199px){
         flex-wrap: wrap;
-        justify-content: center;
-
         }
+    @media screen and (min-width: 1200px){
+        flex-wrap: nowrap;
+    }
 }
 .our-team-title {
     display: block;
@@ -42,7 +44,12 @@
                     margin-bottom: 30px;
                 }
     }
-    
+    @media screen and (min-width: 1200px){
+        width: 270px;
+        &:not(:last-child){
+            margin-right: 30px;
+        }
+    }
 }
 
 .our-team-list-item__img {
