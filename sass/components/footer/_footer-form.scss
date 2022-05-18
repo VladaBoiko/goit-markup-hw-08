@@ -120,9 +120,12 @@
 }
 // --------------------комп'ютерна-----------------
 .footer-subscribe {
+    @media screen and (max-width: 1199px) {
     position: relative;
     margin-left: auto;
     margin-right: auto;
+        }
+    
 }
 
 .desktop-footer-form-container {
