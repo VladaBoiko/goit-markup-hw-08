@@ -9,11 +9,15 @@
     clip: rect(0 0 0 0);
 }
 .ul.button {
-    margin-bottom: 50px;
     display: flex;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
     flex-wrap: wrap;
+    margin-bottom: 40px;
+    }
+    @media screen and (min-width: 768px) {
+    justify-content: center;
+    margin-bottom: 30px;
     }
 }
 .hero-button,

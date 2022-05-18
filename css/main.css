@@ -1275,12 +1275,18 @@ textarea::placeholder {
 }
 
 .ul.button {
-  margin-bottom: 50px;
   display: flex;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .ul.button {
     flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .ul.button {
+    justify-content: center;
+    margin-bottom: 30px;
   }
 }
 
