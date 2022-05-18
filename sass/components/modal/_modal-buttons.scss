@@ -1,9 +1,11 @@
 .modal-form-button {
     position: absolute;
     bottom: 40px;
-    // left: 165px;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1199px) {
         left: 125px;
+    }
+    @media screen and (min-width: 1200px) {
+        left: 165px;
     }
 
     width: 200px;
@@ -37,6 +39,9 @@
     position: absolute;
     top: 8px;
     right: 8px;
+    @media screen and (max-width: 479px) {
+    right: 20px;
+    }
 
     width: 30px;
     height: 30px;

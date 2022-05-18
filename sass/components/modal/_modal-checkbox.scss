@@ -10,15 +10,14 @@
 
 .form-agreement-label {
     position: absolute;
-    // left: 36px;
 
     display: block;
     width: 401px;
     
-    @media screen and (max-width: 768px) {
-        left: 24px;
+    @media screen and (max-width: 1199px) {
+    left: 24px;
 
-       font-family: 'Roboto';
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -26,16 +25,18 @@
     letter-spacing: var(--main-letter-spacing);
     color: var(--main-text-color);
             }
+    @media screen and (min-width: 1200px) {
+    left: 36px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: var(--main-letter-spacing);
+    color: var(--main-text-color);
+    }
     
-
-    // font-family: 'Roboto';
-    // font-style: normal;
-    // font-weight: 400;
-    // font-size: 14px;
-    // line-height: 1.71;
-    // letter-spacing: var(--main-letter-spacing);
-
-    // color: var(--main-text-color);
 }
 
 .form-agreement-checkbox {
@@ -52,12 +53,15 @@
 .icon-disagree {
     display: inline-block;
     position: absolute;
-    // left: 1px;
+    left: 12px;
     width: 16px;
     height: 15px;
     border: 1px solid var(--title-text-color);
     border-radius: 3px;
     transition: all var(--main-transition);
+    @media screen and (max-width: 1199px) {
+    left: 0;
+    }
 
     .form-agreement-checkbox:checked+& {
     background-color: var(--focus-color);
