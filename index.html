@@ -46,7 +46,6 @@
         </button>
 
         <div class="mobile-menu js-menu-container">
-            
             <button type="button" class="menu-button menu-close-button js-close-menu">
                 <svg class="mobile-menu-icon " width="40" height="40" aria-label="Переключатель мобильного меню">
                     <use class="icon-close" href="./images/icons.svg#icon-close_mobile"></use>
@@ -171,7 +170,25 @@
                 <h2 class="our-team-title">Наша команда</h2>
                 <ul class="ul our-team-list">
                     <li class="our-team-list-item">
-                        <img  class="our-team-list-item__img" src="./images/ourteam(1).jpg" alt="Игорь Демьяненко" width="270" height="260" />
+                        <picture class="our-team-list-item__img ">
+                            <source srcset="
+                            ./images/dteam1x-min.jpg 1x,
+                            ./images/dteam2x-min.jpg 2x" 
+                            media="(min-width: 1200px)" />
+                            <source srcset="
+                             ./images/tteam11x-min.jpg 1x,
+                            ./images/tteam12x-min.jpg 2x" 
+                            media="(min-width: 768px)" />
+                            <source srcset="
+                            ./images/mteam_first1x.jpg 1x,
+                            ./images/mteam_first2x.jpg 2x
+                            " 
+                            media="(min-width: 350px)" />                           
+                            
+                            <img src="
+                            ./images/dteam1x-min.jpg 1x,
+                            ./images/dteam2x-min.jpg 2x"  alt="Игорь" />
+                        </picture>
                         <h3 class="our-team-list-item__name">Игорь Демьяненко</h3>
                         <p class="our-team-list-item__position">Product Designer</p>
                        
@@ -200,7 +217,25 @@
                     </li>
 
                     <li class="our-team-list-item">
-                        <img  class="our-team-list-item__img" src="./images/ourteam(2).jpg" alt="Ольга Репина" width="270" height="260" />
+                         <picture class="our-team-list-item__img ">
+                            <source srcset="
+                            ./images/dteam1x-min.jpg 1x,
+                            ./images/dteam2x-min.jpg 2x" 
+                            media="(min-width: 1200px)" />
+                            <source srcset="
+                             ./images/tteam_21x-min.jpg 1x,
+                            ./images/tteam_22x-min.jpg 2x" 
+                            media="(min-width: 768px)" />
+                            <source srcset="
+                            ./images/mteam_sec1x-min.jpg 1x,
+                            ./images/mteam_sec2x-min.jpg 2x
+                            " 
+                            media="(min-width: 350px)" />                           
+                            
+                            <img src="
+                            ./images/dteam1x-min.jpg 1x,
+                            ./images/dteam2x-min.jpg 2x"   alt="Ольга" />
+                        </picture>
                         <h3 class="our-team-list-item__name">Ольга Репина</h3>
                         <p class="our-team-list-item__position">Frontend Developer</p>
                         <ul class="our-team-social ul">

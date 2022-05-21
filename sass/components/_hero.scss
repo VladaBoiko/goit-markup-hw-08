@@ -14,24 +14,43 @@
         @media screen and (max-width: 767px) {
         background-image: linear-gradient(rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)),
-        url(../images/mhero_mobile1x-min);
+        url(../images/mhero_mobile1x-min.jpg);
+            @media (min-device-pixel-ratio: 2),
+                (-webkit-min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                            rgba(47, 48, 58, 0.4)), url(../images/mhero_mobile2x-min.jpg);
+                    }
 
-        
         }
         @media screen and (min-width: 768px) and (max-width: 1199px) {
         background-image: linear-gradient(rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)),
-        url(../images/hero-tablet.jpg);
-        
+        url(../images/thero1x-min.jpg);
+        @media (min-device-pixel-ratio: 2),
+            (-webkit-min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)), url(../images/thero2x-min.jpg);
+            }
          }
         @media screen and (min-width: 1200px) {
         background-image: linear-gradient(rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)),
-        url(../images/hero-bci.jpg);
+        url(../images/dhero1x-min.jpg);
         padding-top: 200px;
         height: 600px;
         max-width: 1600px;
         text-align: center;
+        @media (min-device-pixel-ratio: 2),
+            (-webkit-min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                        rgba(47, 48, 58, 0.4)), url(../images/dhero2x-min.jpg);
+            }
          }
          &__text {
             margin-top: 0;    
