@@ -90,6 +90,12 @@ img {
   height: auto;
 }
 
+picture {
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
 .section-header {
   display: flex;
   align-items: center;
