@@ -844,7 +844,7 @@ img {
 }
 @media screen and (max-width: 767px) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile-hero.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mhero_mobile1x-min);
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
