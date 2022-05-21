@@ -100,8 +100,26 @@
             <li class="portfolio-progect-item">
                 <a href="" class="project-cards">
                     <div class="project-cards-image">
-                    <img src="./images/port(1).jpg" alt="Веб-сайты" width="370" height="294" />
-                    <div class="project-cards-active">
+                        <picture class="our-team-list-item__img ">
+                            <source srcset="
+                            ./images/dteam1x-min.jpg 1x,
+                            ./images/dteam2x-min.jpg 2x" 
+                            media="(min-width: 1200px)" />
+                            <source srcset="
+                             ./images/tteam_11x-min.jpg 1x,
+                            ./images/tteam_12x-min.jpg 2x" 
+                            media="(min-width: 768px)" />
+                            <source srcset="
+                            ./images/mteam_first1x-min.jpg 1x,
+                            ./images/mteam_first2x-min.jpg 2x
+                            " 
+                            media="(max-width: 767px)" />                           
+                            
+                            <img src="
+                            ./images/dteam1x-min.jpg 1x,
+                            ./images/dteam2x-min.jpg 2x"  alt="Веб-сайты" />
+                        </picture>
+                        <div class="project-cards-active">
                         <p class="project-cards-active-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и
                             сервисов. Все это позволит посетителю получить
                             исчерпывающие сведения о компании или частном лице.</p>

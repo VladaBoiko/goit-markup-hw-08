@@ -137,7 +137,15 @@
                 <h2 class="what-we-do__title">Чем мы занимаемся</h2>
                 <ul class="ul what-we-do-list">
                     <li class="what-we-do-list__item">   
-                        <img src="./images/whatwedo(1).jpg" alt="Человек печатает нр планшет" width="370" height="294" /> 
+                        <img
+                        srcset="
+                        ./images/dwwd1x-min.jpg 1x,
+                        ./images/dwwd2x-min.jpg 2x"
+                        src="./images/dwwd2x-min.jpg"
+                        alt="печатает человек"
+                        width="370"
+                        height="294"
+                      />
                     <div class="what-we-do-list__overlay">
                         <p class="what-we-do-list__text">
                         Десктопные приложения
@@ -145,18 +153,34 @@
                     </div>
                     </li>
 
-                    <li class="what-we-do-list__item">                        
-                        <img src="./images/whatwedo(2).jpg" alt="Просмотр на мониторе " width="370" height="294" />
-                    <div class="what-we-do-list__overlay">
+                    <li class="what-we-do-list__item"> 
+                        <img
+                        srcset="
+                        ./images/dwwd21x-min.jpg 1x,
+                        ./images/dwwd22x-min.jpg 2x"
+                        src="./images/dwwd22x-min.jpg"
+                        alt="Просмотр на мониторе"
+                        width="370"
+                        height="294"
+                      />                       
+                      <div class="what-we-do-list__overlay">
                         <p class="what-we-do-list__text">
                         Мобильные приложения
                         </p>
                     </div>
                     </li>
 
-                    <li class="what-we-do-list__item">                        
-                        <img src="./images/whatwedo(3).jpg" alt="Цветовое отображение" width="370" height="294" />
-                    <div class="what-we-do-list__overlay">
+                    <li class="what-we-do-list__item">         
+                        <img
+                        srcset="
+                        ./images/dwwd31x-min.jpg 1x,
+                        ./images/dwwd32x-min.jpg 2x"
+                        src="./images/dwwd32x-min.jpg"
+                        alt="Цветовое отображение"
+                        width="370"
+                        height="294"
+                      />                       
+                        <div class="what-we-do-list__overlay">
                         <p class="what-we-do-list__text">
                         Дизайнерские решения
                         </p>
@@ -176,14 +200,14 @@
                             ./images/dteam2x-min.jpg 2x" 
                             media="(min-width: 1200px)" />
                             <source srcset="
-                             ./images/tteam11x-min.jpg 1x,
-                            ./images/tteam12x-min.jpg 2x" 
+                             ./images/tteam_11x-min.jpg 1x,
+                            ./images/tteam_12x-min.jpg 2x" 
                             media="(min-width: 768px)" />
                             <source srcset="
-                            ./images/mteam_first1x.jpg 1x,
-                            ./images/mteam_first2x.jpg 2x
+                            ./images/mteam_first1x-min.jpg 1x,
+                            ./images/mteam_first2x-min.jpg 2x
                             " 
-                            media="(min-width: 350px)" />                           
+                            media="(max-width: 767px)" />                           
                             
                             <img src="
                             ./images/dteam1x-min.jpg 1x,
@@ -219,8 +243,8 @@
                     <li class="our-team-list-item">
                          <picture class="our-team-list-item__img ">
                             <source srcset="
-                            ./images/dteam1x-min.jpg 1x,
-                            ./images/dteam2x-min.jpg 2x" 
+                            ./images/dteam21x-min.jpg 1x,
+                            ./images/dteam22x-min.jpg 2x" 
                             media="(min-width: 1200px)" />
                             <source srcset="
                              ./images/tteam_21x-min.jpg 1x,
@@ -230,11 +254,11 @@
                             ./images/mteam_sec1x-min.jpg 1x,
                             ./images/mteam_sec2x-min.jpg 2x
                             " 
-                            media="(min-width: 350px)" />                           
+                            media="(max-width: 767px)" />                           
                             
                             <img src="
-                            ./images/dteam1x-min.jpg 1x,
-                            ./images/dteam2x-min.jpg 2x"   alt="Ольга" />
+                            ./images/dteam21x-min.jpg 1x,
+                            ./images/dteam22x-min.jpg 2x"   alt="Ольга" />
                         </picture>
                         <h3 class="our-team-list-item__name">Ольга Репина</h3>
                         <p class="our-team-list-item__position">Frontend Developer</p>
@@ -263,7 +287,25 @@
                     </li>  
 
                     <li class="our-team-list-item">         
-                        <img  class="our-team-list-item__img" src="./images/ourteam(3).jpg" alt="Николай Тарасов" width="270" height="260" />
+                        <picture class="our-team-list-item__img ">
+                            <source srcset="
+                            ./images/dteam31x-min.jpg 1x,
+                            ./images/dteam32x-min.jpg 2x" 
+                            media="(min-width: 1200px)" />
+                            <source srcset="
+                             ./images/tteam_31x-min.jpg 1x,
+                            ./images/tteam_32x-min.jpg 2x" 
+                            media="(min-width: 768px)" />
+                            <source srcset="
+                            ./images/mteam_tres1x-min.jpg 1x,
+                            ./images/mteam_tres2x-min.jpg 2x
+                            " 
+                            media="(max-width: 767px)" />                           
+                            
+                            <img src="
+                            ./images/dteam31x-min.jpg 1x,
+                            ./images/dteam32x-min.jpg 2x"   alt="Николай" />
+                        </picture>
                         <h3 class="our-team-list-item__name">Николай Тарасов</h3>
                         <p class="our-team-list-item__position">Marketing</p>
                         <ul class="our-team-social ul">
@@ -291,7 +333,25 @@
                     </li> 
                        
                     <li class="our-team-list-item">
-                        <img  class="our-team-list-item__img" src="./images/ourteam(4).jpg" alt="Михаил Ермаков" width="270" height="260" />
+                        <picture class="our-team-list-item__img ">
+                            <source srcset="
+                            ./images/dteam41x-min.jpg 1x,
+                            ./images/dteam42x-min.jpg 2x" 
+                            media="(min-width: 1200px)" />
+                            <source srcset="
+                             ./images/tteam_41x-min.jpg 1x,
+                            ./images/tteam_42x-min.jpg 2x" 
+                            media="(min-width: 768px)" />
+                            <source srcset="
+                            ./images/mteam_quad1x-min.jpg 1x,
+                            ./images/mteam_quad2x-min.jpg 2x
+                            " 
+                            media="(max-width: 767px)" />                           
+                            
+                            <img src="
+                            ./images/dteam41x-min.jpg 1x,
+                            ./images/dteam42x-min.jpg 2x"   alt="Михаил" />
+                        </picture>
                         <h3 class="our-team-list-item__name">Михаил Ермаков</h3>
                         <p class="our-team-list-item__position">Designer </p>   
                         <ul class="our-team-social ul">
