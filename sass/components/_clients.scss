@@ -21,9 +21,9 @@
 
 .clients-list {
     margin-top: 50px;
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     @media screen and (min-width: 480px) and (max-width: 1199px) {
         justify-content: space-between;
     }

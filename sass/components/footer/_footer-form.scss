@@ -11,8 +11,15 @@
     }
 }
 
-
-.footer-form-container input {
+.mobile-label{
+    @media screen and (max-width: 767px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+}
+.footer-input {
+    display: block;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.25;
@@ -40,14 +47,14 @@
             margin-right: auto;
             margin-left: auto;
         }
-        @media screen and (min-width: 1200px) {
-            width: 358px;
-            margin-bottom: 20px;
-            display: block;
-            margin-top: 30px;
-            margin-right: auto;
-            margin-left: auto;
-        }
+        // @media screen and (min-width: 1200px) {
+        //     width: 358px;
+        //     margin-bottom: 20px;
+        //     display: block;
+        //     margin-top: 30px;
+        //     margin-right: auto;
+        //     margin-left: auto;
+        // }
 
     &::placeholder{
      font-family: 'Roboto';

@@ -10,31 +10,23 @@
 
 .form-agreement-label {
     position: absolute;
-
     display: block;
     width: 401px;
-    
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: var(--main-letter-spacing);
+    color: var(--main-text-color);    
     @media screen and (max-width: 1199px) {
     left: 24px;
-
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
     font-size: 12px;
     line-height: 1.17;
-    letter-spacing: var(--main-letter-spacing);
-    color: var(--main-text-color);
-            }
+    }
     @media screen and (min-width: 1200px) {
     left: 36px;
-
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
-    letter-spacing: var(--main-letter-spacing);
-    color: var(--main-text-color);
     }
     
 }

@@ -4,7 +4,6 @@
     background-color: var(--footer-bcg-color); 
 }
 
-
 .link:hover,
 .link:focus{
     color: var(--focus-color);
@@ -19,10 +18,7 @@
     line-height: 1.19;
     color: var(--footer-logo-color);
     text-decoration: none;
-    &.desktop{
-    @media screen and (max-width: 1199px){
-        display: none;
-    }}
+    
     @media screen and (max-width: 1199px) {
         font-size: 24px;
         line-height: 1.16;
@@ -34,7 +30,7 @@
 }
 .footer-list{
     @media screen and (max-width: 1199px) {
-     display: block;
+    display: block;
     margin-bottom: 60px;   
     }
     
