@@ -965,6 +965,7 @@ picture {
   min-height: 581px;
   transform: translate(-50%, -50%) scale(1);
   z-index: 1000;
+  overflow-y: scroll;
   padding: 40px 40px;
   background-color: #FFFFFF;
   border-radius: 4px;
@@ -986,10 +987,12 @@ picture {
 @media screen and (max-width: 479px) {
   .modal {
     width: 100%;
-    min-height: 609px;
+    height: 609px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
+    overflow: hidden;
+    overflow-y: scroll;
   }
 }
 
