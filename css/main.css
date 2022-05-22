@@ -1137,7 +1137,7 @@ textarea::placeholder {
 @media screen and (max-width: 480px) {
   .form-agreement-label {
     width: 230px;
-    left: 40px;
+    left: 50px;
     font-size: 12px;
     line-height: 1.17;
   }
@@ -1245,7 +1245,7 @@ textarea::placeholder {
 }
 @media screen and (max-width: 480px) {
   .button-modal {
-    top: 15px;
+    top: 10px;
     right: 10px;
   }
 }
