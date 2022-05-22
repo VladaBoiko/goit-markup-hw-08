@@ -28,6 +28,12 @@
     font-size: 14px;
     line-height: 1.71;
     }
+     @media screen and (max-width: 480px) {
+    width: 230px;
+    left: 40px;
+    font-size: 12px;
+    line-height: 1.17;
+    }
     
 }
 
@@ -54,6 +60,9 @@
     @media screen and (max-width: 1199px) {
     left: 0;
     }
+        @media screen and (max-width: 480px) {
+            left: 20px;
+        }
 
     .form-agreement-checkbox:checked+& {
     background-color: var(--focus-color);

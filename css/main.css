@@ -39,6 +39,11 @@ body {
   margin-right: auto;
   margin-left: auto;
 }
+@media screen and (max-width: 479px) {
+  .container {
+    width: 100%;
+  }
+}
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .container {
     width: 480px;
@@ -420,6 +425,12 @@ picture {
     display: none;
   }
 }
+@media screen and (max-width: 479px) {
+  .ul.mobile-social {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 
 .mobile-social__link {
   font-weight: 500;
@@ -446,6 +457,12 @@ picture {
   height: 22px;
   border-radius: 2px;
   background-color: #C4C4C4;
+}
+@media screen and (max-width: 479px) {
+  .mobile-social__item {
+    margin-bottom: 10px;
+    width: 33%;
+  }
 }
 
 .footer {
@@ -897,6 +914,12 @@ picture {
     margin-right: auto;
   }
 }
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .hero__text {
+    display: block;
+    width: 290px;
+  }
+}
 .hero__button {
   cursor: pointer;
   padding: 10px 32px;
@@ -954,6 +977,15 @@ picture {
 @media screen and (max-width: 1199px) {
   .modal {
     width: 450px;
+    min-height: 609px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+@media screen and (max-width: 479px) {
+  .modal {
+    width: 100%;
     min-height: 609px;
     top: 50%;
     left: 50%;
@@ -1099,6 +1131,14 @@ textarea::placeholder {
     line-height: 1.71;
   }
 }
+@media screen and (max-width: 480px) {
+  .form-agreement-label {
+    width: 230px;
+    left: 40px;
+    font-size: 12px;
+    line-height: 1.17;
+  }
+}
 
 .form-agreement-checkbox {
   position: absolute;
@@ -1124,6 +1164,11 @@ textarea::placeholder {
 @media screen and (max-width: 1199px) {
   .icon-disagree {
     left: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .icon-disagree {
+    left: 20px;
   }
 }
 .form-agreement-checkbox:checked + .icon-disagree {
@@ -1164,6 +1209,12 @@ textarea::placeholder {
     left: 165px;
   }
 }
+@media screen and (max-width: 480px) {
+  .modal-form-button {
+    left: 50%;
+    transform: translate(-50%);
+  }
+}
 .modal-form-button:hover, .modal-form-button:focus {
   background-color: var(--hero-button-fh-color);
   border-color: --hero-button-fh-color;
@@ -1187,6 +1238,12 @@ textarea::placeholder {
 @media screen and (max-width: 479px) {
   .button-modal {
     right: 20px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .button-modal {
+    top: 15px;
+    right: 10px;
   }
 }
 
@@ -1236,6 +1293,11 @@ textarea::placeholder {
   font-size: 14px;
   text-transform: uppercase;
   margin-bottom: 10px;
+}
+@media screen and (max-width: 767px) {
+  .exelents-list-item__title {
+    text-align: center;
+  }
 }
 
 .exelents-list-item__text {

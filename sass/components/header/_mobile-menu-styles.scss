@@ -81,6 +81,10 @@
     display: flex;
     align-items: baseline;
     margin-top: 64px;
+        @media screen and (max-width: 479px) {
+            display: flex;
+            flex-wrap: wrap;
+        }
 }
 
 .mobile-social__link{
@@ -110,4 +114,8 @@
         border-radius: 2px;
         background-color: #C4C4C4;  
    }
+        @media screen and (max-width: 479px) {
+            margin-bottom: 10px;
+            width: 33%;
+        }
 }

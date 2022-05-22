@@ -32,6 +32,9 @@
     text-transform: uppercase;
 
     margin-bottom: 10px;
+    @media screen and (max-width: 767px) {
+            text-align: center;;
+        }
 }
 
 .exelents-list-item__text {
