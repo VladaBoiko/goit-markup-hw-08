@@ -425,7 +425,7 @@ picture {
     display: none;
   }
 }
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 399px) {
   .ul.mobile-social {
     display: flex;
     flex-wrap: wrap;
@@ -458,7 +458,27 @@ picture {
   border-radius: 2px;
   background-color: #C4C4C4;
 }
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 399px) {
+  .mobile-social__item::after {
+    display: none;
+  }
+}
+.mobile-social__item::before {
+  display: inline-block;
+  position: absolute;
+  transform: translateX(-10px);
+  content: "";
+  width: 1px;
+  height: 22px;
+  border-radius: 2px;
+  background-color: #C4C4C4;
+}
+@media screen and (min-width: 400px) {
+  .mobile-social__item::before {
+    display: none;
+  }
+}
+@media screen and (max-width: 400px) {
   .mobile-social__item {
     margin-bottom: 10px;
     width: 33%;
@@ -1792,6 +1812,27 @@ textarea::placeholder {
   opacity: 0;
   color: var(--hero-text-color);
   transition: opacity var(--main-transition);
+}
+@media screen and (max-width: 380px) {
+  .project-cards-active-text {
+    top: 20px;
+    left: 10px;
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 381px) and (max-width: 479px) {
+  .project-cards-active-text {
+    top: 30px;
+    left: 10px;
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .project-cards-active-text {
+    top: 30px;
+    left: 20px;
+    font-size: 24px;
+  }
 }
 .project-cards:hover .project-cards-active-text, .project-cards:focus .project-cards-active-text {
   opacity: 1;

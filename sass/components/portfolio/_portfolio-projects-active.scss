@@ -27,7 +27,21 @@
     opacity: 0;
     color: var(--hero-text-color);
     transition: opacity var(--main-transition);
-
+    @media screen and (max-width: 380px) {
+        top: 20px;
+        left: 10px;
+        font-size: 16px;
+    }
+        @media screen and (min-width: 381px) and (max-width: 479px) {
+            top: 30px;
+            left: 10px;
+            font-size: 20px;
+        }
+        @media screen and (min-width: 480px) and (max-width: 767px) {
+        top: 30px;
+        left: 20px;
+        font-size: 24px;
+    }
     .project-cards:hover &,
     .project-cards:focus & {
     opacity: 1;

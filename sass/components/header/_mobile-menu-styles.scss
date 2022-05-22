@@ -81,7 +81,7 @@
     display: flex;
     align-items: baseline;
     margin-top: 64px;
-        @media screen and (max-width: 479px) {
+        @media screen and (max-width: 399px) {
             display: flex;
             flex-wrap: wrap;
         }
@@ -112,9 +112,25 @@
         width: 1px;
         height: 22px;
         border-radius: 2px;
-        background-color: #C4C4C4;  
+        background-color: #C4C4C4;
+        @media screen and (max-width: 399px) {
+               display: none;
+   }}
+   &::before {
+       display: inline-block;
+       position: absolute;
+       transform: translateX(-10px);
+       content: '';
+
+       width: 1px;
+       height: 22px;
+       border-radius: 2px;
+       background-color: #C4C4C4;
+    @media screen and (min-width: 400px) {
+            display: none;
+        }
    }
-        @media screen and (max-width: 479px) {
+        @media screen and (max-width: 400px) {
             margin-bottom: 10px;
             width: 33%;
         }
