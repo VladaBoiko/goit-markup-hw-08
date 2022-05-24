@@ -447,7 +447,7 @@ picture {
 .mobile-social__item:not(:last-child) {
   margin-right: 20px;
 }
-.mobile-social__item::after {
+.mobile-social__item:not(:last-child)::after {
   display: inline-block;
   position: absolute;
   left: 100%;
@@ -459,7 +459,7 @@ picture {
   background-color: #C4C4C4;
 }
 @media screen and (max-width: 399px) {
-  .mobile-social__item::after {
+  .mobile-social__item:not(:last-child)::after {
     display: none;
   }
 }
